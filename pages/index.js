@@ -1,0 +1,1 @@
+export default () => <h1>LWRY :: public website Next.js</h1>
