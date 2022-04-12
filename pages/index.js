@@ -39,10 +39,10 @@ export default function Home(props) {
     )
 }
 
-export async function getStaticProps() {
-    return { props: { isStatic: true } }
-}
-
-// export async function getServerSideProps() {
-//     return { props: { isSSR: true } }
+// export async function getStaticProps() {
+//     return { props: { isStatic: true } }
 // }
+
+export async function getServerSideProps() {
+    return { props: { isSSR: true } }
+}
