@@ -2,7 +2,7 @@
   "name": "LWRY-Public",
   "version": "1.0.0",
   "description": "",
-  "main": "function.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
@@ -22,9 +22,6 @@
   "dependencies": {
     "next": "^12.1.4",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "firebase-functions": "^3.11.0",
-    "cross-env": "^7.0.2",
-    "firebase-admin": "^9.1.1"
+    "react-dom": "^18.0.0"
   }
 }
