@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"lawlivery",
+    "site":"lawlivery-5f290",
     "public": "out",
     "ignore": [
       "firebase.json",
