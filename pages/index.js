@@ -1,1 +1,1 @@
-export default () => <h1>LWRY :: public website Next.js V1.0.1</h1>
+export default () => <h1>LWRY :: public website Next.js V1.0.2</h1>
