@@ -1,6 +1,7 @@
 .content {
+  padding: 15px 0 !important;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  opacity: 1;
+  width: 100% !important;
 }
 
 .footerText {

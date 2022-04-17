@@ -1,0 +1,126 @@
+.content {
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 15px 0 !important;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  position: fixed !important;
+  width: 100% !important;
+  top: 0 !important;
+}
+
+.font {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.fontBold {
+  font-weight: bold !important;
+}
+
+.productBox {
+  width: 380px;
+  position: absolute;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  opacity: 1;
+  margin-left: -120px;
+  padding: 20px 20px 10px 20px;
+}
+
+.productItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 6px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.productItem:hover {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 6px 20px;
+  cursor: pointer;
+  background: #EBEBEB 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.iconProduct {
+  width: 40px;
+  margin-right: 16px;
+}
+
+.productTitle {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #434343;
+  opacity: 1;
+}
+
+.productDetails {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #434343;
+  opacity: 1;
+}
+
+.feature {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #434343;
+  opacity: 1;
+  margin-bottom: 16px;
+  padding: 0 20px;
+}
+
+.supportBox {
+  position: absolute;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  opacity: 1;
+  margin-left: -200px;
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+
+.manualBox {
+  width: 380px;
+  padding: 20px 20px 10px 20px;
+}
+
+@media (max-width: 991px) {
+  .productBox {
+    margin-left: auto;
+    padding-top: 8px;
+  }
+
+  .supportBox {
+    margin-left: auto;
+    width: 380px;
+  }
+}
+
+@media (max-width: 500px) {
+  .productBox {
+    margin-left: auto;
+    padding-top: 8px;
+  }
+
+  .supportBox {
+    margin-left: auto;
+    width: 380px;
+  }
+
+  .manualBox {
+    padding-top: 8px;
+  }
+}

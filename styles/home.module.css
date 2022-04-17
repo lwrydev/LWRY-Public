@@ -242,6 +242,7 @@
 
   .lwryDetailsPic {
     height: 90vw;
+    max-width: 98%;
   }
 
   .detailsContentText {
@@ -260,5 +261,17 @@
   .aboutLwryBox {
     flex: 0 0 250px;
     height: 250px;
+  }
+
+  .featurePic {
+    max-width: 98%;
+  }
+
+  .featureText {
+    font-size: 30px;
+  }
+
+  .blogText {
+    font-size: 30px;
   }
 }
