@@ -1,0 +1,13 @@
+.content {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.footerText {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
+  padding: 40px;
+}
