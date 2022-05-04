@@ -1,6 +1,8 @@
+require("dotenv").config()
+const path = require('path')
 module.exports = {
-    env: {
-        users: process.env.USERS,
-    },
-    optimizeFonts: false
+  include: path.resolve(__dirname, 'assets/svg'),
+  webpack(config) {
+    return config
+  }
 }

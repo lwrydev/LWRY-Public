@@ -8,7 +8,6 @@ import ProductMenu from "./productMenu/ProductMenu"
 import SupportMenu from "./supportMenu/SupportMenu"
 
 export default function NavBar() {
-  const [user, setUser] = useState(null)
   const [showProduct, setShowProduct] = useState(false)
   const [showSupport, setShowSupport] = useState(false)
 
@@ -21,6 +20,21 @@ export default function NavBar() {
     if (showSupport)
       setShowProduct(false)
   }, [showSupport])
+
+  const openApp = () => {
+    fetch('/api/open_website', {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    }).then(res => {
+      if (res.status == 200) {
+        res.json().then(data => {
+          window.location.assign(data.url)
+        })
+      }
+    })
+  }
 
   return (
     <Navbar expand="lg" className={styles.content}>
@@ -62,7 +76,7 @@ export default function NavBar() {
           </Nav>
           <Nav className="justify-content-end" >
             <Nav.Item>
-              <Nav.Link href="/login" className="fontColor fontNavbar">เข้าสู่ระบบ</Nav.Link>
+              <Nav.Link className="fontColor fontNavbar"><div onClick={() => openApp()}>เข้าสู่ระบบ</div></Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/login" className="fontColor fontNavbar">เริ่มต้นใช้งาน</Nav.Link>

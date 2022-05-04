@@ -25,3 +25,7 @@ body:lang(en-EN) {
   font-weight: 500;
   margin: 0 10px;
 }
+
+.container {
+  max-width: 100% !important;
+}
