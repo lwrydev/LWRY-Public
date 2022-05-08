@@ -273,6 +273,7 @@
   border-radius: 34px;
   opacity: 1;
   margin: 0 20px;
+  padding: 30px 10px;
 }
 
 .featureItemHide {
@@ -283,6 +284,16 @@
   border-radius: 34px;
   opacity: 0.4;
   margin: 0 20px;
+  padding: 30px 10px;
+}
+
+.ftTitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
 }
 
 .blogBlock {

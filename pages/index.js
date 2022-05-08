@@ -1,4 +1,4 @@
-import { Button } from 'react-bootstrap'
+import { Button, Carousel } from 'react-bootstrap'
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
 
@@ -7,8 +7,14 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 //icon
 import IconHome from '../assets/logo/icon_homepage.svg'
 import IconFeature from '../assets/logo/icon_feature.svg'
+import { useState } from 'react'
 
 export default function Home() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
   return (
     <div>
       <div className={styles.mainContent}>
@@ -84,9 +90,15 @@ export default function Home() {
         </div>
         <div className='col-7 overflow-hidden d-flex align-items-center'>
           <div className={styles.featureList}>
-            <div className={styles.featureItem}></div>
-            <div className={styles.featureItemHide}></div>
-            <div className={styles.featureItemHide}></div>
+            <div className={styles.featureItem}>
+              <div className={styles.ftTitle}>แชทกับทนาย</div>
+            </div>
+            <div className={styles.featureItemHide}>
+              <div className={styles.ftTitle}>ว่าจ้างทนาย</div>
+            </div>
+            <div className={styles.featureItemHide}>
+              <div className={styles.ftTitle}>ใช้งานง่าย</div>
+            </div>
           </div>
         </div>
         <div className={styles.featureAgBox}>
@@ -95,6 +107,23 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Carousel activeIndex={index} onSelect={handleSelect} indicators={false}>
+        <Carousel.Item>
+          <div className={styles.featureItem}>
+            <div className={styles.ftTitle}>แชทกับทนาย</div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className={styles.featureItem}>
+            <div className={styles.ftTitle}>แชทกับทนาย</div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className={styles.featureItem}>
+            <div className={styles.ftTitle}>แชทกับทนาย</div>
+          </div>
+        </Carousel.Item>
+      </Carousel>
       <div className={styles.blogBlock}>
         <div className={styles.blogText}>Blog</div>
         <div className={styles.blogPic}></div>
