@@ -82,7 +82,7 @@ export default function Footer() {
                 <div className={styles.subMenu}>ราคา</div>
                 <div className={styles.subMenu}>ร่วมเป็นทนายกับเรา</div>
                 <div className={styles.subMenu}>ร่วมงานกับเรา</div>
-                <div className={styles.subMenu}>ร่วมงานกับเรา</div>
+                <div className={styles.subMenu}>ทนายทั้งหมด</div>
               </div>
               <div className='col-2'>
                 <div className={styles.menuTitle}>Account</div>
