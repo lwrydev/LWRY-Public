@@ -95,18 +95,15 @@
 
 .lwryDetailsBlock {
   padding: 1%;
-  display: flex;
   flex-flow: row wrap-reverse;
 }
 
 .lwryDetailsBlock2 {
   padding: 1%;
-  display: flex;
   flex-flow: row wrap;
 }
 
 .lwryDetailsPic {
-  width: 600px;
   height: 400px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 16px;
