@@ -1,0 +1,122 @@
+.blogBlock {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+}
+
+.blogText {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
+  margin: 80px 100px 20px 0;
+  text-align: end;
+}
+
+.blogAgBox {
+  position: relative;
+  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogAngle {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 15px #00000029;
+  opacity: 1;
+  border-radius: 30px;
+  color: #6E6E6E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.blogTitle {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
+  text-align: center;
+}
+
+.blogTxt {
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.blogBG {
+  height: 80px;
+  width: 100%;
+  background: #F2F8FF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.blogItem {
+  width: 350px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 15px #00000029;
+  border-radius: 6px;
+  opacity: 1;
+  margin: 30px 20px;
+}
+
+.blogItemHide {
+  width: 300px;
+  height: 400px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 20px #00000029;
+  border-radius: 34px;
+  opacity: 0.4;
+  margin: 30px 20px;
+  padding: 30px 10px;
+}
+
+.blogItemInvi {
+  width: 300px;
+  height: 10px;
+}
+
+.ftTitle {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
+  padding: 20px;
+}
+
+.blogDetails {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+  padding: 0 20px 10px 20px;
+}
+
+.detailsSpace {
+  height: 160px;
+  width: 100%;
+}
+
+.details {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #707070;
+  padding: 24px 5%;
+  margin: 100px 0 40px 5%;
+  position: absolute;
+}

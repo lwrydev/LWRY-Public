@@ -1,0 +1,113 @@
+.featureBlock {
+  display: flex;
+  flex-direction: row;
+}
+
+.featureText {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
+  margin: 50px 0 0 4%;
+}
+
+.featureDetails {
+  padding: 30px;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featureAgBox {
+  position: relative;
+  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureAngle {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 15px #00000029;
+  opacity: 1;
+  border-radius: 30px;
+  color: #6E6E6E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.featureTitle {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
+  text-align: center;
+}
+
+.featureTxt {
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.featureItem {
+  width: 300px;
+  height: 400px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 20px #00000029;
+  border-radius: 34px;
+  opacity: 1;
+  margin: 30px 20px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureItemHide {
+  width: 300px;
+  height: 400px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 20px #00000029;
+  border-radius: 34px;
+  opacity: 0.4;
+  margin: 30px 20px;
+  padding: 30px 10px;
+}
+
+.featureItemInvi {
+  width: 300px;
+  height: 10px;
+}
+
+.ftTitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: 0px;
+  color: #15355F;
+  opacity: 1;
+}
+
+.btnInit {
+  background: #406EAC 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 14px;
+  opacity: 1;
+  padding: 6px 40px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 12px;
+}

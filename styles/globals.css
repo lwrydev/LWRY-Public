@@ -20,3 +20,17 @@ body {
 .container {
   max-width: 100% !important;
 }
+
+.alice-carousel__stage-item {
+  width: 400px !important;
+}
+
+li.alice-carousel__stage-item.__active.__target {
+  opacity: 1;
+  cursor: default;
+}
+
+.alice-carousel__stage-item {
+  opacity: 0.3;
+  cursor: pointer;
+}

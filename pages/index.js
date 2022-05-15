@@ -1,20 +1,15 @@
-import { Button, Carousel } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import styles from '../styles/home.module.css'
 import Image from 'next/image'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import Feature from '../components/carousel/features/Features'
+import Blog from '../components/carousel/blogs/Blogs'
+
 //icon
 import IconHome from '../assets/logo/icon_homepage.svg'
-import IconFeature from '../assets/logo/icon_feature.svg'
-import { useState } from 'react'
 
 export default function Home() {
-  const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
   return (
     <div>
       <div className={styles.mainContent}>
@@ -36,10 +31,16 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.lwryDetailsBlock}>
-        <div className={styles.lwryDetailsPic}></div>
-        <div className={styles.lwryDetails}>
-          <div className={styles.detailsContentText}>Lawlivery คืออะไร?</div>
-          <div className={styles.detailsContentDetails}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนาของเทคโนโลยีที่มีความก้าวหน้า อย่างไม่หยุดยั้งทำให้ผู้ประกอบการคงจะใช้วิธีการผลิต การจำหน่าย หรือการบริการแบบเดิม ๆ อีกต่อไปไม่ได้ เพราะอาจไม่สามารถตอบสนอง</div>
+        <div className='d-flex'>
+          <div className='col-6'>
+            <div className={styles.lwryDetailsPic}></div>
+          </div>
+          <div className='col-6'>
+            <div className={styles.lwryDetails}>
+              <div className={styles.detailsContentText}>Lawlivery คืออะไร?</div>
+              <div className={styles.detailsContentDetails}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนาของเทคโนโลยีที่มีความก้าวหน้า อย่างไม่หยุดยั้งทำให้ผู้ประกอบการคงจะใช้วิธีการผลิต การจำหน่าย หรือการบริการแบบเดิม ๆ อีกต่อไปไม่ได้ เพราะอาจไม่สามารถตอบสนอง</div>
+            </div>
+          </div>
         </div>
       </div>
       <div className={styles.aboutLwry}>
@@ -68,66 +69,22 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.lwryDetailsBlock2}>
+        <div className='d-flex'>
+          <div className='col-6'>
+            <div className={styles.lwryDetails}>
+              <div className={styles.detailsContentText}>Solution ของ Lawlivery</div>
+              <div className={styles.detailsContentDetails}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนาของเทคโนโลยีที่มีความก้าวหน้า อย่างไม่หยุดยั้งทำให้ผู้ประกอบการคงจะใช้วิธีการผลิต การจำหน่าย หรือการบริการแบบเดิม ๆ อีกต่อไปไม่ได้ เพราะอาจไม่สามารถตอบสนอง</div>
+            </div>
+          </div>
+          <div className='col-6'>
+            <div className={styles.lwryDetailsPic}></div>
+          </div>
+        </div>
         <div className={styles.lwryDetails}>
-          <div className={styles.detailsContentText}>Solution ของ Lawlivery</div>
-          <div className={styles.detailsContentDetails}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนาของเทคโนโลยีที่มีความก้าวหน้า อย่างไม่หยุดยั้งทำให้ผู้ประกอบการคงจะใช้วิธีการผลิต การจำหน่าย หรือการบริการแบบเดิม ๆ อีกต่อไปไม่ได้ เพราะอาจไม่สามารถตอบสนอง</div>
-        </div>
-        <div className={styles.lwryDetailsPic}></div>
-      </div>
-      <div className={styles.featureBlock}>
-        <div className='col-1 d-flex align-items-center justify-content-center'>
-          <div className={styles.featureAngle}>
-            <FontAwesomeIcon icon={faAngleLeft} size='3x' />
-          </div>
-        </div>
-        <div className='col-4'>
-          <div className={styles.featureText}>Our Feature</div>
-          <div className={styles.featureDetails}>
-            <div className={styles.featureTitle}>อธิบาย feature หนึ่ง</div>
-            <div className={styles.featureTxt}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนอย่างรวดเร็วตามการพัฒนาของเทคโนโลยี</div>
-            <Image src={IconFeature} height='240' />
-          </div>
-        </div>
-        <div className='col-7 overflow-hidden d-flex align-items-center'>
-          <div className={styles.featureList}>
-            <div className={styles.featureItem}>
-              <div className={styles.ftTitle}>แชทกับทนาย</div>
-            </div>
-            <div className={styles.featureItemHide}>
-              <div className={styles.ftTitle}>ว่าจ้างทนาย</div>
-            </div>
-            <div className={styles.featureItemHide}>
-              <div className={styles.ftTitle}>ใช้งานง่าย</div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.featureAgBox}>
-          <div className={styles.featureAngle}>
-            <FontAwesomeIcon icon={faAngleRight} size='3x' />
-          </div>
         </div>
       </div>
-      <Carousel activeIndex={index} onSelect={handleSelect} indicators={false}>
-        <Carousel.Item>
-          <div className={styles.featureItem}>
-            <div className={styles.ftTitle}>แชทกับทนาย</div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className={styles.featureItem}>
-            <div className={styles.ftTitle}>แชทกับทนาย</div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className={styles.featureItem}>
-            <div className={styles.ftTitle}>แชทกับทนาย</div>
-          </div>
-        </Carousel.Item>
-      </Carousel>
-      <div className={styles.blogBlock}>
-        <div className={styles.blogText}>Blog</div>
-        <div className={styles.blogPic}></div>
-      </div>
+      <Feature />
+      <Blog />
     </div>
   )
 }
