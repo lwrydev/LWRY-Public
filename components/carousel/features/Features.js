@@ -94,45 +94,48 @@ export default function Feature() {
   };
 
   return (
-    <div>
-      <div className={styles.featureText}>Our Feature</div>
-      <div className={styles.featureBlock}>
-        <div className='col-1 d-flex align-items-center justify-content-center'>
-          {thumbIndex > 0 ?
-            <div className={styles.featureAngle} onClick={() => slidePrev()} >
-              <FontAwesomeIcon icon={faAngleLeft} size='3x' />
-            </div>
-            :
-            <></>
-          }
-        </div>
-        <div className='col-5 d-flex align-items-center justify-content-center row'>
-          <div className={styles.featureDetails}>
-            <div className={styles.featureTitle}>{features[thumbIndex].title}</div>
-            <div className={styles.featureTxt}>{features[thumbIndex].detail}</div>
-            <Image src={IconFeature} height='240' />
+    <div className="d-flex">
+      <div className="col-2"></div>
+      <div className="col-10">
+        <div className={styles.featureText}>Our Feature</div>
+        <div className={styles.featureBlock}>
+          <div className='col-1 d-flex align-items-center justify-content-center'>
+            {thumbIndex > 0 ?
+              <div className={styles.featureAngle} onClick={() => slidePrev()} >
+                <FontAwesomeIcon icon={faAngleLeft} size='3x' />
+              </div>
+              :
+              <></>
+            }
           </div>
-        </div>
-        <div className='col-6 overflow-hidden d-flex align-items-center'>
-          <AliceCarousel
-            activeIndex={thumbIndex}
-            autoWidth
-            disableDotsControls
-            disableButtonsControls
-            items={thumbs}
-            mouseTracking={false}
-            onSlideChanged={syncThumbs}
-            responsive={responsive}
-          />
-        </div>
-        <div className={styles.featureAgBox}>
-          {thumbIndex < elements.length - 3 ?
-            <div className={styles.featureAngle} onClick={() => slideNext()} >
-              <FontAwesomeIcon icon={faAngleRight} size='3x' />
+          <div className='col-5 d-flex align-items-center justify-content-center row'>
+            <div className={styles.featureDetails}>
+              <div className={styles.featureTitle}>{features[thumbIndex].title}</div>
+              <div className={styles.featureTxt}>{features[thumbIndex].detail}</div>
+              <Image src={IconFeature} height='240' />
             </div>
-            :
-            <></>
-          }
+          </div>
+          <div className='col-6 overflow-hidden d-flex align-items-center feature'>
+            <AliceCarousel
+              activeIndex={thumbIndex}
+              autoWidth
+              disableDotsControls
+              disableButtonsControls
+              items={thumbs}
+              mouseTracking={false}
+              onSlideChanged={syncThumbs}
+              responsive={responsive}
+            />
+          </div>
+          <div className={styles.featureAgBox}>
+            {thumbIndex < elements.length - 3 ?
+              <div className={styles.featureAngle} onClick={() => slideNext()} >
+                <FontAwesomeIcon icon={faAngleRight} size='3x' />
+              </div>
+              :
+              <></>
+            }
+          </div>
         </div>
       </div>
     </div>

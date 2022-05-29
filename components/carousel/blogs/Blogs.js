@@ -85,42 +85,45 @@ export default function Blog() {
   };
 
   return (
-    <div>
-      <div className={styles.blogText}>Blog</div>
-      <div className={styles.details}>
-        <div className={styles.detailsSpace}></div>
-        <div>{blogs[thumbIndex].detail}</div>
-      </div>
-      <div className={styles.blogBlock}>
-        <div className='col-1 d-flex align-items-center justify-content-center'>
-          {thumbIndex > 0 ?
-            <div className={styles.blogAngle} onClick={() => slidePrev()} >
-              <FontAwesomeIcon icon={faAngleLeft} size='3x' />
-            </div>
-            :
-            <></>
-          }
+    <div className="d-flex">
+      <div className="col-2"></div>
+      <div className="col-10">
+        <div className={styles.blogText}>Blog</div>
+        <div className={styles.details}>
+          <div className={styles.detailsSpace}></div>
+          <div>{blogs[thumbIndex].detail}</div>
         </div>
-        <div className='col-11 overflow-hidden d-flex align-items-center'>
-          <AliceCarousel
-            activeIndex={thumbIndex}
-            autoWidth
-            disableDotsControls
-            disableButtonsControls
-            items={thumbs}
-            mouseTracking={false}
-            onSlideChanged={syncThumbs}
-            responsive={responsive}
-          />
-        </div>
-        <div className={styles.blogAgBox}>
-          {thumbIndex < elements.length - 3 ?
-            <div className={styles.blogAngle} onClick={() => slideNext()} >
-              <FontAwesomeIcon icon={faAngleRight} size='3x' />
-            </div>
-            :
-            <></>
-          }
+        <div className={styles.blogBlock}>
+          <div className='col-1 d-flex align-items-center justify-content-center'>
+            {thumbIndex > 0 ?
+              <div className={styles.blogAngle} onClick={() => slidePrev()} >
+                <FontAwesomeIcon icon={faAngleLeft} size='3x' />
+              </div>
+              :
+              <></>
+            }
+          </div>
+          <div className='col-11 overflow-hidden d-flex align-items-center blog'>
+            <AliceCarousel
+              activeIndex={thumbIndex}
+              autoWidth
+              disableDotsControls
+              disableButtonsControls
+              items={thumbs}
+              mouseTracking={false}
+              onSlideChanged={syncThumbs}
+              responsive={responsive}
+            />
+          </div>
+          <div className={styles.blogAgBox}>
+            {thumbIndex < elements.length - 4 ?
+              <div className={styles.blogAngle} onClick={() => slideNext()} >
+                <FontAwesomeIcon icon={faAngleRight} size='3x' />
+              </div>
+              :
+              <></>
+            }
+          </div>
         </div>
       </div>
     </div>

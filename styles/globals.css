@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Kanit' !important;
-  background: #F8F8F8 !important;
+  background: transparent linear-gradient(180deg, #F2F8FF 0%, #FFFFFF 16%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
 }
 
 .fontColor {
@@ -21,8 +21,12 @@ body {
   max-width: 100% !important;
 }
 
-.alice-carousel__stage-item {
-  width: 400px !important;
+.feature > .alice-carousel > div > .alice-carousel__wrapper > .alice-carousel__stage >.alice-carousel__stage-item {
+  width: 360px !important;
+}
+
+.blog > .alice-carousel > div > .alice-carousel__wrapper > .alice-carousel__stage >.alice-carousel__stage-item {
+  width: 460px !important;
 }
 
 li.alice-carousel__stage-item.__active.__target {

@@ -1,12 +1,12 @@
 .blogBlock {
   display: flex;
   flex-direction: row;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .blogText {
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0px;
   color: #15355F;
   opacity: 1;
@@ -56,16 +56,16 @@
 }
 
 .blogBG {
-  height: 80px;
+  height: 160px;
   width: 100%;
-  background: #F2F8FF 0% 0% no-repeat padding-box;
+  background: #A9BFD9 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
 .blogItem {
-  width: 350px;
+  width: 430px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 2px 15px #00000029;
+  box-shadow: 0px 2px 10px #00000029;
   border-radius: 6px;
   opacity: 1;
   margin: 30px 20px;
@@ -97,15 +97,15 @@
 }
 
 .blogDetails {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0px;
   color: #707070;
   opacity: 1;
-  padding: 0 20px 10px 20px;
+  padding: 0 70px 10px 20px;
 }
 
 .detailsSpace {
-  height: 160px;
+  height: 250px;
   width: 100%;
 }
 
@@ -113,10 +113,14 @@
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 16px;
   opacity: 1;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0px;
   color: #707070;
   padding: 24px 5%;
-  margin: 100px 0 40px 5%;
+  margin: 100px 14% 40px 5%;
   position: absolute;
+}
+
+.alice-carousel__stage-item {
+  width: 540px !important;
 }
