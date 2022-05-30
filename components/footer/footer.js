@@ -1,4 +1,5 @@
 import styles from './footer.module.css'
+import { useRouter } from "next/router"
 
 import Image from 'next/image'
 
@@ -19,6 +20,9 @@ import IconLinkedinFt from '../../assets/logo/linkedin_ft.svg'
 import IconInstagramFt from '../../assets/logo/instagram_ft.svg'
 
 export default function Footer() {
+
+  const router = useRouter()
+
   return (
     <div className={styles.content}>
       <div className={styles.paymentMethod}>
@@ -77,8 +81,8 @@ export default function Footer() {
               </div>
               <div className='col-2'>
                 <div className={styles.menuTitle}>Navigation</div>
-                <div className={styles.subMenu}>หน้าหลัก</div>
-                <div className={styles.subMenu}>ผลิตภัณฑ์</div>
+                <div className={styles.subMenu} onClick={() => router.push('/')}>หน้าหลัก</div>
+                <div className={styles.subMenu} onClick={() => router.push('/products')}>ผลิตภัณฑ์</div>
                 <div className={styles.subMenu}>ราคา</div>
                 <div className={styles.subMenu}>ร่วมเป็นทนายกับเรา</div>
                 <div className={styles.subMenu}>ร่วมงานกับเรา</div>

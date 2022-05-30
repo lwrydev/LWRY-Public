@@ -21,6 +21,10 @@ body {
   max-width: 100% !important;
 }
 
+.row {
+  --bs-gutter-x: 0rem;
+}
+
 .feature > .alice-carousel > div > .alice-carousel__wrapper > .alice-carousel__stage >.alice-carousel__stage-item {
   width: 360px !important;
 }

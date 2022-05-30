@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav } from "react-bootstrap"
+import { useRouter } from "next/router"
 
 import styles from '../navbar.module.css'
 
@@ -8,12 +8,20 @@ import IconSignature from '../../../assets/logo/Icon_signature'
 import IconReadTheDocs from '../../../assets/logo/Icon_readthedocs'
 
 export default function ProductMenu({ setShowProduct }) {
+
+  const router = useRouter()
+
+  const openProducts = () => {
+    router.push('/products')
+    setShowProduct(false)
+  }
+
   return (
     <div
       className={styles.productBox}
       onMouseLeave={() => setShowProduct(false)}
     >
-      <div className={styles.productItem}>
+      <div className={styles.productItem} onClick={() => openProducts()}>
         <div className={styles.iconProduct}>
           <IconMapLawyer />
         </div>

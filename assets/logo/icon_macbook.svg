@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900.507" height="533.169" viewBox="0 0 900.507 533.169">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.016" y1="0.051" x2="1.015" y2="0.99" gradientUnits="objectBoundingBox">
+      <stop offset="0.002" stop-color="#d1d1d1"/>
+      <stop offset="0.991" stop-color="#969696"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" y2="0.242" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#25242a"/>
+      <stop offset="0.268" stop-color="#3e3e44"/>
+      <stop offset="0.84" stop-color="#808186"/>
+      <stop offset="0.991" stop-color="#939499"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="14.193" x2="0.5" y2="13.434" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#25242a"/>
+      <stop offset="0.647" stop-color="#69696f" stop-opacity="0.376"/>
+      <stop offset="0.991" stop-color="#939499" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.015" stop-color="#55565a"/>
+      <stop offset="0.219" stop-color="#aeafb4"/>
+      <stop offset="0.795" stop-color="#a2a3a7"/>
+      <stop offset="0.991" stop-color="#4f5055"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#707176"/>
+      <stop offset="0.014" stop-color="#c9cacf"/>
+      <stop offset="0.03" stop-color="#afb0b4"/>
+      <stop offset="0.056" stop-color="#7a7b7f"/>
+      <stop offset="0.142" stop-color="#c8c9ce"/>
+      <stop offset="0.808" stop-color="#c9cacf"/>
+      <stop offset="0.929" stop-color="#7a7b7f"/>
+      <stop offset="0.982" stop-color="#c7c8cd"/>
+      <stop offset="1" stop-color="#555459"/>
+    </linearGradient>
+  </defs>
+  <g id="Artwork_5" data-name="Artwork 5" transform="translate(450.254 266.585)">
+    <g id="Group_8555" data-name="Group 8555" transform="translate(-450.254 -266.585)">
+      <path id="Rectangle_1091" data-name="Rectangle 1091" d="M22.708,0H702.656a22.708,22.708,0,0,1,22.708,22.708V489.9a6.135,6.135,0,0,1-6.135,6.135H10.607A10.607,10.607,0,0,1,0,485.423V22.708A22.708,22.708,0,0,1,22.708,0Z" transform="translate(84.058 0)" fill="url(#linear-gradient)"/>
+      <path id="Rectangle_1092" data-name="Rectangle 1092" d="M22.476,0H696.662a22.476,22.476,0,0,1,22.476,22.476V483.9a5.908,5.908,0,0,1-5.908,5.908H10.379A10.379,10.379,0,0,1,0,479.425V22.476A22.476,22.476,0,0,1,22.476,0Z" transform="translate(87.171 3.113)"/>
+      <path id="Rectangle_1093" data-name="Rectangle 1093" d="M0,0H719.138a0,0,0,0,1,0,0V25.766a5.366,5.366,0,0,1-5.366,5.366H10.206A10.206,10.206,0,0,1,0,20.926V0A0,0,0,0,1,0,0Z" transform="translate(87.171 461.785)" fill="#333"/>
+      <rect id="Rectangle_1094" data-name="Rectangle 1094" width="681.78" height="426.503" transform="translate(105.85 34.245)" fill="#ccc"/>
+      <text id="MacBook_Pro" data-name="MacBook Pro" transform="translate(415.723 481.357)" fill="#999" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">MacBook Pro</tspan></text>
+      <g id="Group_8554" data-name="Group 8554" transform="translate(0 488.766)">
+        <path id="Path_3133" data-name="Path 3133" d="M96.386,1176.82h566.7s112.378.432,149.737,0,80.149-13.305,80.149-13.305V1160.7H319.751l-181.646.131L0,1160.7v2.819S31.12,1176.82,96.386,1176.82Z" transform="translate(0 -1147.783)" fill="url(#linear-gradient-2)"/>
+        <path id="Path_3134" data-name="Path 3134" d="M113.821,1196h566.7s112.378-.432,149.737,0,80.149,13.3,80.149,13.3v2.819H337.185l-181.646-.131-138.1.131V1209.3S48.555,1196,113.821,1196Z" transform="translate(-9.899 -1167.717)" fill="url(#linear-gradient-3)"/>
+        <rect id="Rectangle_1095" data-name="Rectangle 1095" width="151.507" height="13.49" transform="translate(371.505 0)" fill="url(#linear-gradient-4)"/>
+        <path id="Path_3135" data-name="Path 3135" d="M0,1132H373.44s-.864,10.806,16.424,10.806H506.753c12.346,0,12.854-10.806,12.854-10.806H892.971v15.222H0Z" transform="translate(0 -1131.49)" fill="url(#linear-gradient-5)"/>
+      </g>
+    </g>
+  </g>
+</svg>

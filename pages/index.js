@@ -15,8 +15,8 @@ export default function Home() {
       <div className={styles.mainContent}>
         <div className={styles.picture}></div>
         <div className={styles.mainBlock}>
-          <div className='col-1'></div>
-          <div className='col-5'>
+          <div className='d-none d-xl-block col-xl-1'></div>
+          <div className='col-lg-6 col-xl-5'>
             <div>
               <div className={styles.mainContentText}>ข้อความหลักเว็บไซต์</div>
               <div className={styles.mainContentDetails}>ข้อความย่อย อธิบายหรือขยายความจากข้อความหลัก อธิบายหรือขยายความจากข้อความหลัก</div>
@@ -26,10 +26,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='col-5'>
+          <div className='col-lg-6 col-xl-5'>
             <Image src={IconHome} />
           </div>
-          <div className='col-1'></div>
+          <div className='d-none d-xl-block col-1'></div>
         </div>
       </div>
       <div className={styles.lwryDetailsBlock}>
