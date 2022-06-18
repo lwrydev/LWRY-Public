@@ -20,14 +20,6 @@
   justify-content: center;
 }
 
-.featureAgBox {
-  position: relative;
-  right: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .featureAngle {
   width: 60px;
   height: 60px;
@@ -40,6 +32,9 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: absolute;
+  margin-left: 50px;
+  z-index: 1;
 }
 
 .featureTitle {

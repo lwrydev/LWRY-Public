@@ -85,16 +85,13 @@ export default function Blog() {
   };
 
   return (
-    <div className="d-flex">
-      <div className="col-2"></div>
-      <div className="col-10">
+    <div className="row">
+      <div className="d-sm-none d-md-none col-lg-1 col-xl-2"></div>
+      <div className="col-sm-12 col-md-12 col-lg-11 col-xl-12">
         <div className={styles.blogText}>Blog</div>
-        <div className={styles.details}>
-          <div className={styles.detailsSpace}></div>
-          <div>{blogs[thumbIndex].detail}</div>
-        </div>
         <div className={styles.blogBlock}>
-          <div className='col-1 d-flex align-items-center justify-content-center'>
+          <div className="col-1"></div>
+          <div className='justify-content-center d-flex align-items-center'>
             {thumbIndex > 0 ?
               <div className={styles.blogAngle} onClick={() => slidePrev()} >
                 <FontAwesomeIcon icon={faAngleLeft} size='3x' />
@@ -103,7 +100,8 @@ export default function Blog() {
               <></>
             }
           </div>
-          <div className='col-11 overflow-hidden d-flex align-items-center blog'>
+          <div className="d-none d-sm-block col-1"></div>
+          <div className='col-9 col-sm-8 col-xl-10 overflow-hidden d-flex align-items-center blog'>
             <AliceCarousel
               activeIndex={thumbIndex}
               autoWidth
@@ -115,7 +113,7 @@ export default function Blog() {
               responsive={responsive}
             />
           </div>
-          <div className={styles.blogAgBox}>
+          <div className='justify-content-center d-flex align-items-center'>
             {thumbIndex < elements.length - 4 ?
               <div className={styles.blogAngle} onClick={() => slideNext()} >
                 <FontAwesomeIcon icon={faAngleRight} size='3x' />
@@ -124,6 +122,9 @@ export default function Blog() {
               <></>
             }
           </div>
+        </div>
+        <div className={styles.details}>
+          <div>{blogs[thumbIndex].detail}</div>
         </div>
       </div>
     </div>

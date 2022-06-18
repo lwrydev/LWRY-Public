@@ -26,11 +26,11 @@ export default function Footer() {
   return (
     <div className={styles.content}>
       <div className={styles.paymentMethod}>
-        <div className='d-flex'>
-          <div className='col-2'></div>
-          <div className='col-4'>
+        <div className='row'>
+          <div className='col-1 col-xl-2'></div>
+          <div className='col-11 col-xl-4'>
             <div className={styles.acceptedTxt}>Accepted Payment Methods</div>
-            <div className='d-flex'>
+            <div className='d-flex flex-wrap'>
               <div className={styles.paymentPic}>
                 <Image src={IconKBank} />
               </div>
@@ -48,8 +48,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className='col-2'></div>
-          <div className='col-2'>
+          <div className='col-1 col-xl-2'></div>
+          <div className='col-10 col-xl-2'>
             <div className={styles.acceptedTxt}>Verified Transaction</div>
             <div className='d-flex'>
               <div className={styles.paymentPic}>
@@ -64,11 +64,11 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.menuBlock}>
-        <div className='d-flex'>
-          <div className='col-2'></div>
-          <div className='col-8'>
-            <div className='d-flex'>
-              <div className='col-3'>
+        <div className='row'>
+          <div className='col-1 col-xl-2'></div>
+          <div className='col-11 col-xl-8'>
+            <div className='row'>
+              <div className='col-4 col-md-3 col-lg-3 col-xl-3'>
                 <div>
                   <Image src={Logo2} height='120' />
                 </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                   <Image src={IconAppleStore} />
                 </div>
               </div>
-              <div className='col-2'>
+              <div className='col-4 col-md-3 col-lg-3 col-xl-2'>
                 <div className={styles.menuTitle}>Navigation</div>
                 <div className={styles.subMenu} onClick={() => router.push('/')}>หน้าหลัก</div>
                 <div className={styles.subMenu} onClick={() => router.push('/products')}>ผลิตภัณฑ์</div>
@@ -88,20 +88,22 @@ export default function Footer() {
                 <div className={styles.subMenu}>ร่วมงานกับเรา</div>
                 <div className={styles.subMenu}>ทนายทั้งหมด</div>
               </div>
-              <div className='col-2'>
+              <div className='col-4 col-md-3 col-lg-3 col-xl-2'>
                 <div className={styles.menuTitle}>Account</div>
                 <div className={styles.subMenu}>สมัครบริการ</div>
                 <div className={styles.subMenu}>เข้าสู่ระบบ</div>
                 <div className={styles.subMenu}>ลืมรหัสผ่าน</div>
               </div>
-              <div className='col-2'>
+              <div className='col-4 d-block d-md-none'></div>
+              <div className='col-4 col-md-3 col-lg-3 col-xl-2'>
                 <div className={styles.menuTitle}>Support</div>
                 <div className={styles.subMenu}>FAQ</div>
                 <div className={styles.subMenu}>Help Center</div>
                 <div className={styles.subMenu}>Terms Of Use</div>
                 <div className={styles.subMenu}>Terms & Conditions</div>
               </div>
-              <div className='col-2'>
+              <div className='d-none col-3 d-md-block d-xl-none'></div>
+              <div className='col-4 col-md-3 col-lg-3 col-xl-2'>
                 <div className={styles.menuTitle}>Follow us</div>
                 <div className='d-flex'>
                   <div className={styles.followUs}>
@@ -125,7 +127,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className='col-2'></div>
+          <div className='col-sm-0 col-md-0 col-lg-0 col-xl-2'></div>
         </div>
       </div>
       <div className={styles.copyright}>Copyright © 2022 All Rights Reserved. v1.2.0 Lawlivery Co.,Ltd</div>

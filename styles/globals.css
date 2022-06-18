@@ -42,3 +42,7 @@ li.alice-carousel__stage-item.__active.__target {
   opacity: 0.3;
   cursor: pointer;
 }
+
+img, svg {
+  max-width: max-content !important;
+}
