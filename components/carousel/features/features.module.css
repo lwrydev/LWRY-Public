@@ -51,6 +51,7 @@
   cursor: pointer;
   position: absolute;
   z-index: 1;
+  margin-left: -30px;
 }
 
 .featureTitle {
@@ -139,10 +140,10 @@
   }
 
   .featureItem {
-    width: 220px;
-    height: 310px;
+    width: 200px;
+    height: 285px;
     border-radius: 15px;
-    margin: 0px 0px 30px 16vw;
+    margin: 0px 0px 30px 14vw;
   }
 
   .ftTitle {

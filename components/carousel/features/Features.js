@@ -120,7 +120,7 @@ export default function Feature() {
               </div>
             </div>
           </div>
-          <div className='d-md-none col-1 d-flex align-items-center justify-content-center m-3'>
+          <div className='d-md-none col-1 d-flex align-items-center justify-content-center'>
             {thumbIndex > 0 ?
               <div className={styles.featureAngle} onClick={() => slidePrev()} >
                 <FontAwesomeIcon icon={faAngleLeft} size='3x' />
