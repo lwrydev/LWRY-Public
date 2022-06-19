@@ -95,7 +95,7 @@ export default function Feature() {
 
   return (
     <div className="d-flex">
-      <div className="d-none d-lg-block col-lg-1 col-xl-2"></div>
+      <div className="d-none d-lg-block col-lg-2 col-xl-2"></div>
       <div className="col-12 col-lg-10">
         <div className={styles.featureText}>Our Feature</div>
         <div className={styles.featureBlock + ' flex-wrap flex-md-nowrap'}>
@@ -115,7 +115,7 @@ export default function Feature() {
               <Image src={IconFeature} height='240' />
             </div>
           </div>
-          <div className='d-md-none col-1 d-flex align-items-center justify-content-center'>
+          <div className='d-md-none col-1 d-flex align-items-center justify-content-center m-3'>
             {thumbIndex > 0 ?
               <div className={styles.featureAngle} onClick={() => slidePrev()} >
                 <FontAwesomeIcon icon={faAngleLeft} size='3x' />
@@ -124,8 +124,8 @@ export default function Feature() {
               <></>
             }
           </div>
-          <div className="d-none d-sm-block d-md-none col-1"></div>
-          <div className='col-9 col-md-4 col-lg-6 overflow-hidden d-flex align-items-center feature'>
+          <div className="d-none d-md-none col-1"></div>
+          <div className='col-10 col-md-5 overflow-hidden d-flex align-items-center feature'>
             <AliceCarousel
               activeIndex={thumbIndex}
               autoWidth
@@ -133,13 +133,14 @@ export default function Feature() {
               disableButtonsControls
               items={thumbs}
               mouseTracking={false}
+              touchTracking={false}
               onSlideChanged={syncThumbs}
               responsive={responsive}
             />
           </div>
           <div className='justify-content-center d-flex align-items-center'>
             {thumbIndex < elements.length - 3 ?
-              <div className={styles.featureAngle} onClick={() => slideNext()} >
+              <div className={styles.featureAngleRight} onClick={() => slideNext()} >
                 <FontAwesomeIcon icon={faAngleRight} size='3x' />
               </div>
               :

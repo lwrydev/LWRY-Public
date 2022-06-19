@@ -16,7 +16,7 @@ export default function Home() {
         <div className={styles.picture}></div>
         <div className={styles.mainBlock}>
           <div className='d-none d-xl-block col-xl-1'></div>
-          <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-5'>
+          <div className='col-12 col-sm-7 col-md-6 col-lg-6 col-xl-5'>
             <div>
               <div className={styles.mainContentText}>ข้อความหลักเว็บไซต์</div>
               <div className={styles.mainContentDetails}>ข้อความย่อย อธิบายหรือขยายความจากข้อความหลัก อธิบายหรือขยายความจากข้อความหลัก</div>
@@ -26,8 +26,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-5'>
-            <Image src={IconHome} height='400' />
+          <div className='col-12 col-sm-5 col-md-6 col-lg-6 col-xl-5'>
+            <Image src={IconHome} height='300' />
           </div>
           <div className='d-none d-xl-block col-1'></div>
         </div>
@@ -55,41 +55,49 @@ export default function Home() {
         <div className='d-flex'>
           <div className='col-md-0 col-lg-1 col-xl-2'></div>
           <div className='col-sm-12 col-md-12 col-lg-10 col-xl-8'>
-            <div className='d-md-flex'>
-              <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
-                <div className='col-4 col-sm-4 col-md-12'>
-                  <div className={styles.aboutPic}></div>
-                </div>
-                <div className='col-sm-8 col-md-12'>
-                  <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่หนึ่ง</div>
-                  <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
-                </div>
-              </div>
-              <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
-                <div className='col-4 col-sm-4 col-md-12'>
-                  <div className={styles.aboutPic}></div>
-                </div>
-                <div className='col-sm-8 col-md-12'>
-                  <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่สอง</div>
-                  <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
+            <div className='d-md-flex flex-wrap'>
+              <div className='col-md-6 col-lg-3'>
+                <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
+                  <div className='col-4 col-sm-4 col-md-12 d-flex justify-content-center'>
+                    <div className={styles.aboutPic}></div>
+                  </div>
+                  <div className='col-sm-8 col-md-12'>
+                    <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่หนึ่ง</div>
+                    <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
+                  </div>
                 </div>
               </div>
-              <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
-                <div className='col-4 col-sm-4 col-md-12'>
-                  <div className={styles.aboutPic}></div>
-                </div>
-                <div className='col-sm-8 col-md-12'>
-                  <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่สาม</div>
-                  <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
+              <div className='col-md-6 col-lg-3'>
+                <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
+                  <div className='col-4 col-sm-4 col-md-12 d-flex justify-content-center'>
+                    <div className={styles.aboutPic}></div>
+                  </div>
+                  <div className='col-sm-8 col-md-12'>
+                    <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่สอง</div>
+                    <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
+                  </div>
                 </div>
               </div>
-              <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
-                <div className='col-4 col-sm-4 col-md-12'>
-                  <div className={styles.aboutPic}></div>
+              <div className='col-md-6 col-lg-3'>
+                <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
+                  <div className='col-4 col-sm-4 col-md-12 d-flex justify-content-center'>
+                    <div className={styles.aboutPic}></div>
+                  </div>
+                  <div className='col-sm-8 col-md-12'>
+                    <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่สาม</div>
+                    <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
+                  </div>
                 </div>
-                <div className='col-sm-8 col-md-12'>
-                  <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่สี่</div>
-                  <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
+              </div>
+              <div className='col-md-6 col-lg-3'>
+                <div className={styles.aboutLwryBox + ' d-flex flex-row d-md-block'}>
+                  <div className='col-4 col-sm-4 col-md-12 d-flex justify-content-center'>
+                    <div className={styles.aboutPic}></div>
+                  </div>
+                  <div className='col-sm-8 col-md-12'>
+                    <div className={styles.aboutTitle + ' text-md-center'}>จุดขายที่สี่</div>
+                    <div className={styles.aboutDetail + ' text-md-center'}>ปัจจุบันโลกธุรกิจของเรามีการเปลี่ยนแปลงอย่างรวดเร็วตามการพัฒนา</div>
+                  </div>
                 </div>
               </div>
             </div>

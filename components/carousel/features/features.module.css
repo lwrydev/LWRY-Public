@@ -37,6 +37,23 @@
   z-index: 1;
 }
 
+.featureAngleRight {
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 15px #00000029;
+  opacity: 1;
+  border-radius: 30px;
+  color: #6E6E6E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 50px;
+  z-index: 1;
+}
+
 .featureTitle {
   font-size: 30px;
   font-weight: 500;
@@ -86,7 +103,7 @@
 
 .ftTitle {
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 26px;
   letter-spacing: 0px;
   color: #15355F;
@@ -105,4 +122,104 @@
   color: #FFFFFF;
   position: absolute;
   bottom: 12px;
+}
+
+@media (max-width: 576px) {
+  .featureText {
+    font-size: 24px;
+    margin: 20px 0 0 4%;
+  }
+
+  .featureTitle {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .featureItem {
+    width: 220px;
+    height: 310px;
+    border-radius: 15px;
+    margin: 0px 0px 30px 16vw;
+  }
+
+  .ftTitle {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 577px) {
+  .featureText {
+    margin: 20px 0 0 4%;
+    font-size: 28px;
+  }
+
+  .featureTitle {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .featureItem {
+    width: 270px;
+    height: 370px;
+    border-radius: 15px;
+    margin: 0px 0px 30px 20vw;
+  }
+
+  .ftTitle {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  .featureText {
+    margin: 20px 0 0 4%;
+    font-size: 30px;
+  }
+
+  .featureTitle {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .featureItem {
+    width: 260px;
+    height: 370px;
+    border-radius: 15px;
+    margin: 0px 0px 30px 20px;
+  }
+
+  .ftTitle {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featureText {
+    margin: 20px 0 0 4%;
+    font-size: 30px;
+  }
+
+  .featureTitle {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .featureTxt {
+    font-size: 20px;
+  }
+
+  .featureItem {
+    width: 280px;
+    height: 380px;
+    border-radius: 15px;
+    margin: 0px 0px 30px 20px;
+  }
+
+  .featureAngleRight {
+    margin-left: -80px;
+  }
+
+  .ftTitle {
+    font-size: 26px;
+  }
 }

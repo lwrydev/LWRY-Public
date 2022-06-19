@@ -86,11 +86,12 @@ export default function Blog() {
 
   return (
     <div className="row">
-      <div className="d-sm-none d-md-none col-lg-1 col-xl-2"></div>
+      <div className="d-sm-none d-md-none col-lg-1 col-xl-1"></div>
       <div className="col-sm-12 col-md-12 col-lg-11 col-xl-12">
         <div className={styles.blogText}>Blog</div>
         <div className={styles.blogBlock}>
-          <div className="col-1"></div>
+          <div className="col-1 col-md-2 col-xl-2"></div>
+          <div className="d-none d-sm-block col-1"></div>
           <div className='justify-content-center d-flex align-items-center'>
             {thumbIndex > 0 ?
               <div className={styles.blogAngle} onClick={() => slidePrev()} >
@@ -100,8 +101,7 @@ export default function Blog() {
               <></>
             }
           </div>
-          <div className="d-none d-sm-block col-1"></div>
-          <div className='col-9 col-sm-8 col-xl-10 overflow-hidden d-flex align-items-center blog'>
+          <div className='col-10 col-sm-10 col-lg-8 overflow-hidden d-flex align-items-center blog'>
             <AliceCarousel
               activeIndex={thumbIndex}
               autoWidth
@@ -109,6 +109,7 @@ export default function Blog() {
               disableButtonsControls
               items={thumbs}
               mouseTracking={false}
+              touchTracking={false}
               onSlideChanged={syncThumbs}
               responsive={responsive}
             />
