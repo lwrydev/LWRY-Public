@@ -112,7 +112,12 @@ export default function Feature() {
             <div className={styles.featureDetails}>
               <div className={styles.featureTitle}>{features[thumbIndex].title}</div>
               <div className={styles.featureTxt}>{features[thumbIndex].detail}</div>
-              <Image src={IconFeature} height='240' />
+              <div className="d-none d-sm-block">
+                <Image src={IconFeature} height='240' />
+              </div>
+              <div className="d-block d-sm-none">
+                <Image src={IconFeature} height='180' />
+              </div>
             </div>
           </div>
           <div className='d-md-none col-1 d-flex align-items-center justify-content-center m-3'>
