@@ -336,7 +336,23 @@
     width: 140px;
   }
 
+  .btnInit:hover {
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 140px;
+  }
+
   .btnPrice {
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 140px;
+  }
+
+  .btnPrice:hover {
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -411,7 +427,23 @@
     width: 140px;
   }
 
+  .btnInit:hover {
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 140px;
+  }
+
   .btnPrice {
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 140px;
+  }
+
+  .btnPrice:hover {
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -487,7 +519,23 @@
     width: 150px;
   }
 
+  .btnInit:hover {
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 150px;
+  }
+
   .btnPrice {
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 150px;
+  }
+
+  .btnPrice:hover {
     border-radius: 10px;
     font-size: 18px;
     font-weight: 500;
@@ -564,7 +612,23 @@
     width: 170px;
   }
 
+  .btnInit:hover {
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 170px;
+  }
+
   .btnPrice {
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 170px;
+  }
+
+  .btnPrice:hover {
     border-radius: 16px;
     font-size: 20px;
     font-weight: 500;
