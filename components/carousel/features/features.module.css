@@ -140,14 +140,19 @@
   }
 
   .featureItem {
-    width: 200px;
-    height: 285px;
+    width: 190px;
+    height: 270px;
     border-radius: 15px;
     margin: 0px 0px 30px 14vw;
   }
 
   .ftTitle {
     font-size: 22px;
+  }
+
+  .btnInit {
+    padding: 6px 24px;
+    width: 150px;
   }
 }
 

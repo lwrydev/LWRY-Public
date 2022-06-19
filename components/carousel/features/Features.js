@@ -116,7 +116,7 @@ export default function Feature() {
                 <Image src={IconFeature} height='240' />
               </div>
               <div className="d-block d-sm-none">
-                <Image src={IconFeature} height='180' />
+                <Image src={IconFeature} height='140' />
               </div>
             </div>
           </div>
